@@ -41,7 +41,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Домашняя страница', 'url' => ['/site/index']],
+            ['label' => 'Главная', 'url' => ['/site/index']],
             ['label' => 'О сайте', 'url' => ['/site/about']],
             Yii::$app->user->identity ?
                 (Yii::$app->user->identity->role    //Этот код прячет кнопки на главной странице от неавторизированных пользователей
